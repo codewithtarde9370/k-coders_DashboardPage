@@ -29,6 +29,8 @@ import { CiSquareQuestion } from "react-icons/ci";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { BiSolidOffer } from "react-icons/bi";
 
+import Notification from '../userNotification/notification';
+
 
 
 
@@ -93,11 +95,11 @@ function Header() {
           Orders(10)
         </MenuItem>
         <MenuItem onClick={handleCloseNotificationsDrop}>
-          <ListItemIcon>
-            <BiSolidOffer/>
-          </ListItemIcon>
-          Top Deals
-        </MenuItem>
+
+        <Notification/>
+
+       </MenuItem>
+       
         <MenuItem onClick={handleCloseNotificationsDrop}>
           <ListItemIcon>
             <CiSquareQuestion/>
